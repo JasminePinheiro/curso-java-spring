@@ -1,13 +1,19 @@
 package com.api.school.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.api.school.repositories.SchoolRepository;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600) // o controlador irá aceitar todas as solicitações
 @RequestMapping("/school")
 public class SchoolController {
+
+	@Autowired
+	SchoolRepository schoolRespository;
 
 }
 
