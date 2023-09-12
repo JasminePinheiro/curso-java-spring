@@ -1,0 +1,16 @@
+ggas - Gerar os get e os sets automaticos
+
+ghca - Gerar o hashcode
+
+spring.jackson.deserialization.fail-on-unknown-properties=true  
+
+O HashCode é um valor numérico que representa um objeto e é utilizado para otimizar a busca em estruturas de dados como tabelas de espalhamento (hash tables). Ele é importante porque permite que você encontre um objeto em uma estrutura de dados de forma mais rápida do que se você tivesse que percorrer todos os elementos da estrutura.
+
+O cálculo do HashCode deve ser feito de forma consistente com o método equals, ou seja, dois objetos que são iguais (de acordo com o método equals) devem ter o mesmo HashCode. Caso contrário, a busca em uma estrutura de dados que utiliza HashCode pode não funcionar corretamente.
+
+No exemplo que você postou, o cálculo do HashCode é feito a partir da soma dos HashCodes de cada propriedade do objeto. Isso é interessante porque garante que dois objetos que possuem os mesmos valores para as propriedades terão o mesmo HashCode.
+
+Portanto, o HashCode é importante quando trabalhamos com estruturas de dados que usam tabelas de espalhamento para melhorar sua performance.
+
+
+Getters e setters são usados para proteger seus dados, especialmente na criação de classes. Para cada instância de variável, um método getter retorna seu valor, enquanto um método setter o define ou atualiza.
